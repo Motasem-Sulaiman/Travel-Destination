@@ -1,16 +1,12 @@
-import Footer from "../footer/Footer";
-import Header from "../header/Header";
-import Tours from "../tours/Tours";
-const data = require("../../data/db.json");
+function Home(){
 
-function Home() {
-  return (
-    <>
-      <Header />
-      <Tours myArr={data} />
-      <Footer />
-    </>
-  );
+
+  return(
+
+
+
+      <h1>Hello Homeee</h1>
+  )
 }
 
 export default Home;

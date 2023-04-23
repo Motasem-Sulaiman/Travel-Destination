@@ -1,12 +1,15 @@
+import {Link} from "react-router-dom"
+
+
+
 function Headerr() {
  
     return (
-      <header>
+      <nav>
+    <Link to="/">Home Page</Link>
+    {/* <Link to="/city/:id">tour Page</Link> */}
 
-        <h1>Hello </h1>
-      </header>
-      
-  
+    </nav>
     );
   }
   
