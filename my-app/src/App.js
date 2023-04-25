@@ -14,6 +14,7 @@ function App() {
   return (
     <>
       <Header />
+
       <Routes>
 
 
@@ -24,9 +25,9 @@ function App() {
 
 
 
-
-      </Routes>
-      <Tours />
+      </Routes> 
+    
+      <Tours/>
       <Footer />
     </>
   );
