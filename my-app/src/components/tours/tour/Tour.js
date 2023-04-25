@@ -1,37 +1,44 @@
+import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
+import './Tour.css'
 
-
-import TourDetails from '../../TourDetails/TourDetails';
-
-import Card from 'react-bootstrap/Card';
-import { useParams,Link } from 'react-router-dom';
-
-   
-   function Tour(props) {
- 
+function Tour(props) {
+  return (
+    <>
+      {props.tour.map((item, i) => {
         return (
-            <>
-        
-            {props.tour.map((item, i) => {
-              return <Link to="/city/:id"  key={item.id} > <Card style={{ width: '80%' ,color:'red' , padding:'60px',marginLeft:"110px"}} >
-              <Card.Img variant="top" src={item.image}/>
-              <Card.Body>
-                <Card.Title>{item.name}</Card.Title>
-
-                
-          
-              </Card.Body>
-
-             
-            </Card>
-            </Link>
-
-
-            })}
-            </>
-        );
-      }
       
-
-
+          <Link
+            to={`/city/${item.id}`}
+            key={item.id}
+            style={{ textDecoration: "none" }}
+         
+          >
+            {" "}
+        <Card 
+             style={{
+               width: "60%",
+               color: "#394867",
+               padding: "60px",
+               marginLeft: "18%",
+               marginTop: "25px",
+               backgroundColor:"#9BA4B5",
+              }}
+            >
+               <Card.Title style={{textAlign:"center"}}>{item.name}</Card.Title>
+              <Card.Img variant="top" src={item.image} />
+              <Card.Body>
+               
+              </Card.Body>
+            </Card>
+          </Link>
+   
+        ); 
+        
+      })}
+      
+    </>
+  );
+}
 
 export default Tour;

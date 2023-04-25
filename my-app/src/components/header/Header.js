@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom"
+import './Header.css'
 
 
 
@@ -6,9 +7,9 @@ function Headerr() {
  
     return (
       <nav>
-    <Link to="/">Home Page</Link>
-    {/* <Link to="/city/:id">tour Page</Link> */}
-
+    <Link to="/" className="Lin"><h3 className="Head">Home</h3></Link>
+ 
+    
     </nav>
     );
   }

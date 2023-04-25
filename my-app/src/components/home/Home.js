@@ -1,3 +1,5 @@
+
+import "./Home.css"
 function Home(){
 
 
@@ -5,7 +7,7 @@ function Home(){
 
 
 
-      <h1>Hello Homeee</h1>
+      <h1>Home Page</h1>
   )
 }
 
