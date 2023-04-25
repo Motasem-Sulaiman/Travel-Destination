@@ -15,14 +15,15 @@ function TourDetails(props) {
     <h1>Details About City:</h1>
       <h3>Name--{city.name}</h3>
       <p>City id--{city.id}</p>
-      <p>Info about City--{city.info.slice(0, 185)}</p>
+      <p>Info about City--{city.info.slice(0, 180)}</p>
       <button className="b1" onClick={() => showLess(true)}>see more</button>
       <button className="b2" onClick={() => showLess(false)}>see less</button>
       {showMore && (
         <>
           {" "}
-          <p>{city.info.slice(185, 1000)}</p>{" "}
-          <p>City Image link--{city.image}</p> <p>Price--{city.price}</p>
+          <p>{city.info.slice(180, 1000)}</p>{" "}
+          <p>City Image link--</p> <a href={city.image}>Click Here to show image</a>
+          <p>Price--{city.price}</p>
         </>
       )}
     </>
